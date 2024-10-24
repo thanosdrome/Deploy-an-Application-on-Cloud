@@ -48,7 +48,7 @@ $(document).ready(function () {
 // To fetch the data from .json file
 function fetchData() {
   return new Promise((res, err) => {
-    const data = fetch("./data.json").then(response => response.json())
+    const data = fetch("./guess_the_capital/data.json").then(response => response.json())
     res(data)
   })
 }
